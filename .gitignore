@@ -56,3 +56,14 @@ nunit-*.xml
 echo .vs/>> .gitignore
 echo bin/>> .gitignore
 echo obj/>> .gitignore
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build output
+bin/
+obj/
