@@ -34,32 +34,41 @@
 #endregion
 
 #region 2. Kısım 
-static double DortIslemGeriDonuslu(int sayi1, int sayi2, DortIslem islemTipi)
-{
-    switch (islemTipi)
-    {
-        case DortIslem.Toplama:
-            return sayi1 + sayi2;
-        case DortIslem.Cikartma:
-            return sayi1 - sayi2;
-        case DortIslem.Carpma:
-            return sayi1 * sayi2;
-        case DortIslem.Bolme:
-            return sayi1 / sayi2;
-        default:
-            return 0;
-    }
-}
-double sonuc = DortIslemGeriDonuslu(4, 2, DortIslem.Toplama);
-Console.WriteLine($"Toplama işleminin sonucu: {sonuc}");
+//static double DortIslemGeriDonuslu(int sayi1, int sayi2, DortIslem islemTipi)
+//{
+//    switch (islemTipi)
+//    {
+//        case DortIslem.Toplama:
+//            return sayi1 + sayi2;
+//        case DortIslem.Cikartma:
+//            return sayi1 - sayi2;
+//        case DortIslem.Carpma:
+//            return sayi1 * sayi2;
+//        case DortIslem.Bolme:
+//            return sayi1 / sayi2;
+//        default:
+//            return 0;
+//    }
+//}
+//double sonuc = DortIslemGeriDonuslu(4, 2, DortIslem.Toplama);
+//Console.WriteLine($"Toplama işleminin sonucu: {sonuc}");
+
+//enum DortIslem
+//{
+//    Toplama,
+//    Cikartma,
+//    Carpma,
+//    Bolme
+//}
 #endregion
 
+#region 3. Kısım
+using Metods;
 
+OgrenciIslemleri ogrenci = new OgrenciIslemleri();
+ogrenci.SelamVer();
+ogrenci.SelamVer("Sevde!");
+Console.WriteLine($"Yaşınız parametresiz: {ogrenci.YasHesapla()}");
+Console.WriteLine($"Yaşınız parametreli: {ogrenci.YasHesapla(2006)}");
+#endregion
 
-enum DortIslem
-{
-    Toplama,
-    Cikartma,
-    Carpma,
-    Bolme
-}
