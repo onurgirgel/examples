@@ -64,13 +64,14 @@
 
 #region 3. Kısım
 using Metods;
+using Metods.oop;
 
 //OgrenciIslemleri ogrenci = new OgrenciIslemleri();
 //ogrenci.SelamVer();
 //ogrenci.SelamVer("Sevde!");
 //Console.WriteLine($"Yaşınız parametresiz: {ogrenci.YasHesapla()}");
 //Console.WriteLine($"Yaşınız parametreli: {ogrenci.YasHesapla(2006)}");
-#endregion
+
 
 #region Ödev 1
 //TODO: Kullanıcıdan kahve siparişi alınacak (içecek türü, şeker sayısı, süt olsun mu?)
@@ -104,10 +105,26 @@ using Metods;
 
 #endregion
 
-
 #region Ödev 2
 
 //Market market = new Market();
 //market.FiyatGir();
 
+#endregion
+#endregion
+
+#region Constructor Destructor
+Araba araba = new Araba("Opel");
+
+Ogrenci ogrenci = new Ogrenci();
+ogrenci.a1 = "ABVX213";
+ogrenci.a2 = "TESLKIWQEKQWOEQ";
+ogrenci.harcama = 4500;
+
+Console.WriteLine($"Api Key: {ogrenci.a1}, Api Secret: {ogrenci.a2}, Maaş: {ogrenci.harcama}");
+Kedi kedi = new Kedi();
+kedi.SesCikar("Miyav!!!");
+Kopek kopek = new Kopek();
+
+kopek.SesCikar("Hav Hav!!");
 #endregion
