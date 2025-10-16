@@ -65,10 +65,49 @@
 #region 3. Kısım
 using Metods;
 
-OgrenciIslemleri ogrenci = new OgrenciIslemleri();
-ogrenci.SelamVer();
-ogrenci.SelamVer("Sevde!");
-Console.WriteLine($"Yaşınız parametresiz: {ogrenci.YasHesapla()}");
-Console.WriteLine($"Yaşınız parametreli: {ogrenci.YasHesapla(2006)}");
+//OgrenciIslemleri ogrenci = new OgrenciIslemleri();
+//ogrenci.SelamVer();
+//ogrenci.SelamVer("Sevde!");
+//Console.WriteLine($"Yaşınız parametresiz: {ogrenci.YasHesapla()}");
+//Console.WriteLine($"Yaşınız parametreli: {ogrenci.YasHesapla(2006)}");
 #endregion
 
+#region Ödev 1
+//TODO: Kullanıcıdan kahve siparişi alınacak (içecek türü, şeker sayısı, süt olsun mu?)
+//Console.Write("Lütfen içeçecek türünü seçiniz: 1- Türk kahvesi, 2- Latte, 3-Espresso :");
+//string kaveTuru = Console.ReadLine();
+//Console.Write("Lütfen şeker sayısı giriniz: ");
+//int sekerSayisi = int.Parse(Console.ReadLine());
+//Console.Write("Kahveniz sütlü mü olsun: (E/H) ");
+//string sutKontrol = Console.ReadLine();
+//bool sutVarmi = false;
+//if (sutKontrol == "E")
+//{
+//    sutVarmi = true;
+//}
+//switch (kaveTuru)
+//{
+//    case "1":
+//        kaveTuru = "Türk Kavesi";
+//        break;
+//    case "2":
+//        kaveTuru = "Latte";
+//        break;
+//    case "3":
+//        kaveTuru = "Espresso";
+//        break;
+//}
+
+//KahveSiparisi siparis = new KahveSiparisi();
+//Console.WriteLine(siparis.Hazirla(kaveTuru, sekerSayisi, sutVarmi));
+//Console.WriteLine($"Ödenecek tutar: {siparis.UcretiHesapla(kaveTuru)} TL");
+
+#endregion
+
+
+#region Ödev 2
+
+//Market market = new Market();
+//market.FiyatGir();
+
+#endregion
