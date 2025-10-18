@@ -123,7 +123,7 @@ ogrenci.harcama = 4500;
 
 Console.WriteLine($"Api Key: {ogrenci.a1}, Api Secret: {ogrenci.a2}, Maaş: {ogrenci.harcama}");
 Kedi kedi = new Kedi();
-kedi.SesCikar("Miyav!!!");
+kedi.SesCikar("Miyav!!!"); 
 Kopek kopek = new Kopek();
 
 kopek.SesCikar("Hav Hav!!");
