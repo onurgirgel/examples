@@ -25,12 +25,12 @@ using OOP;
 
 YarismaMesajlari.YarismaBaslangicMesajiVer();
 YarismaSesleri.AlkisSesiCikar(5, 2000);
-string[] yarismacilar = {  "Hilal", };
+string[] yarismacilar = {  "Hilal", "Sevde", "Alper" };
 Random rnd = new Random();
 //TODO: Gündelik hayattan sohbet edilir
 Baslangic:
 Console.ForegroundColor = ConsoleColor.Green;
-Console.Write($"(Sunucu) Merhaba {yarismacilar[rnd.Next(0, 1)]} yarışmamıza hoş geldiniz. Heyecanlı mısınız? (E/H) :");
+Console.Write($"(Sunucu) Merhaba {yarismacilar[rnd.Next(0, 3)]} yarışmamıza hoş geldiniz. Heyecanlı mısınız? (E/H) :");
 string heyecanCevap = Console.ReadLine();
 switch (heyecanCevap.ToUpper())
 {
