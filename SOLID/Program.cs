@@ -23,11 +23,42 @@
 
 #region LISKOV SUBSTİTUTION PRICIPLE
 // Alt sınıflar, üst sınıfların yerine geçmeli ve sistem doğru şekilde çalışmaya devam etmelidir.
-using SOLID.LiskovSubstitution;
+//using SOLID.LiskovSubstitution;
 
-Eagle eagle = new Eagle();
-eagle.Fly();
+//Eagle eagle = new Eagle();
+//eagle.Fly();
 
-Penguen penguen = new Penguen();
-penguen.Fly();
+//Penguen penguen = new Penguen();
+//penguen.Fly();
+#endregion
+
+#region INTERFACE SEGREGATITON
+//using SOLID.InterfaceSegregation;
+//using SOLID.InterfaceSegregation.Machine;
+
+//Human  human = new Human(); 
+//Bird  bird = new Bird();
+
+//human.Talk();
+//human.Work();
+
+//bird.Work();
+//bird.Talk();
+//bird.Fly();
+
+//DepFreeze depFreeze = new DepFreeze();
+//WashingMachine washingMachine = new WashingMachine();
+
+//depFreeze.Freeze();
+//depFreeze.UseElectric();
+
+//washingMachine.Wash();
+//washingMachine.UseElectric();
+#endregion
+
+#region DEPENDENCY INVERSION
+using SOLID.DependencyInversion;
+
+//Order order = new Order();
+//order.Onayla();
 #endregion
