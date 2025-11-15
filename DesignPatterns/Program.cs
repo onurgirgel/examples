@@ -8,6 +8,7 @@
 //studentService.Add();
 
 using DesignPatterns.Factory;
+using DesignPatterns.Singleton;
 
 ISekil sekilDaire = SekilFactory.GetSekil("daire");
 ISekil sekilKare = SekilFactory.GetSekil("kare");

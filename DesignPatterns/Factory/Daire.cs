@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DesignPatterns.Singleton;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,9 +9,11 @@ namespace DesignPatterns.Factory
 {
     public class Daire : ISekil
     {
+
         public void Ciz()
         {
-            Console.WriteLine("--> Daire çizildi");
+            var logger = Logger.GetInstance();
+            logger.Log("--> Daire çizildi");
         }
     }
 }

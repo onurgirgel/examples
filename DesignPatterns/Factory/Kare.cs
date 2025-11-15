@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DesignPatterns.Singleton;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +11,8 @@ namespace DesignPatterns.Factory
     {
         public void Ciz()
         {
-            Console.WriteLine("--> Kare çizildi");
+            var logger = Logger.GetInstance();
+            logger.Log("--> Kare çizildi");
         }
     }
 }
