@@ -14,7 +14,12 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{BC703BFB-8C7C-4D99-89C7-26D5A498A16F}"
 	ProjectSection(SolutionItems) = preProject
 		..\..\..\images.jpeg = ..\..\..\images.jpeg
+		library\images\instagram.png = library\images\instagram.png
+		library\images\linkedin.png = library\images\linkedin.png
 		..\..\..\..\..\Downloads\slider.png = ..\..\..\..\..\Downloads\slider.png
+		library\images\slider.png = library\images\slider.png
+		library\images\twitter.png = library\images\twitter.png
+		library\images\whatsapp.png = library\images\whatsapp.png
 	EndProjectSection
 EndProject
 Global
