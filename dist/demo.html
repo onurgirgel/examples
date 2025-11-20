@@ -1,0 +1,159 @@
+<!doctype html><html lang="tr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI Widget Demo</title><style>* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+                'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .demo-container {
+            max-width: 1200px;
+            width: 100%;
+            background: white;
+            border-radius: 20px;
+            padding: 60px 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #6b7280;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .feature {
+            padding: 30px;
+            background: #f9fafb;
+            border-radius: 16px;
+            transition: transform 0.3s;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature h3 {
+            font-size: 20px;
+            color: #1f2937;
+            margin-bottom: 12px;
+        }
+
+        .feature p {
+            font-size: 14px;
+            color: #6b7280;
+            margin: 0;
+        }
+
+        .integration-section {
+            margin-top: 60px;
+            padding: 40px;
+            background: #f9fafb;
+            border-radius: 16px;
+        }
+
+        .integration-section h2 {
+            font-size: 32px;
+            color: #1f2937;
+            margin-bottom: 20px;
+        }
+
+        .code-block {
+            background: #1f2937;
+            color: #e5e7eb;
+            padding: 24px;
+            border-radius: 12px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            overflow-x: auto;
+            margin-top: 20px;
+            line-height: 1.6;
+        }
+
+        .code-block code {
+            color: #10b981;
+        }
+
+        .cta {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 16px 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: 600;
+            transition: transform 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+
+        .notice {
+            position: fixed;
+            bottom: 100px;
+            right: 100px;
+            background: white;
+            padding: 20px 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+            max-width: 300px;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .notice h4 {
+            font-size: 16px;
+            color: #667eea;
+            margin-bottom: 8px;
+        }
+
+        .notice p {
+            font-size: 14px;
+            color: #6b7280;
+            margin: 0;
+        }</style><script defer="defer" src="ai-widget.min.js"></script></head><body><div class="demo-container"><h1>🤖 AI Chat Widget</h1><p>Modern ve kullanıcı dostu AI chat widget'ınız her web sitesine kolayca entegre edilebilir. Tek satır kod ile müşterilerinize 7/24 AI destekli destek sağlayın.</p><div class="features"><div class="feature"><h3>⚡ Kolay Entegrasyon</h3><p>Tek bir script tag ile dakikalar içinde kurulum yapın.</p></div><div class="feature"><h3>🎨 Özelleştirilebilir</h3><p>Markanıza uygun tema ve konum seçenekleri.</p></div><div class="feature"><h3>📱 Responsive</h3><p>Tüm cihazlarda mükemmel görüntü.</p></div><div class="feature"><h3>💾 Akıllı Bellek</h3><p>Sohbet geçmişi otomatik olarak saklanır.</p></div></div><div class="integration-section"><h2>Entegrasyon</h2><p>Web sitenize widget'ı eklemek için aşağıdaki kodu &lt;/body&gt; etiketinden önce ekleyin:</p><div class="code-block"><code>&lt;!-- AI Chat Widget --&gt; &lt;script src="https://your-cdn.com/ai-widget.min.js"&gt;&lt;/script&gt; &lt;script&gt; window.aiWidgetConfig = { apiUrl: 'https://gw.hizliyo.com/api/ai/ai-engine', models: [ { id: 'llama3.1-8b', name: 'Llama 3.1 8B' }, { id: 'gpt-oss-120b', name: 'GPT OSS 120B' } ], defaultModel: 'llama3.1-8b', position: 'bottom-right', // bottom-right, bottom-left, top-right, top-left theme: 'dark' // dark, light }; &lt;/script&gt;</code></div><p style="margin-top: 20px;"><strong>Manuel Başlatma:</strong></p><div class="code-block"><code>&lt;script&gt; const widget = new AIWidget({ apiUrl: 'https://gw.hizliyo.com/api/ai/ai-engine', models: [ { id: 'llama3.1-8b', name: 'Llama 3.1 8B' }, { id: 'gpt-oss-120b', name: 'GPT OSS 120B' } ], defaultModel: 'llama3.1-8b', position: 'bottom-right', theme: 'dark' }); &lt;/script&gt;</code></div></div><div class="cta"><a href="#" class="cta-button">Hemen Başla</a></div></div><div class="notice"><h4>👉 Widget'ı Deneyin!</h4><p>Sağ alt köşedeki butona tıklayarak widget'ı test edebilirsiniz.</p></div><script src="ai-widget.min.js"></script><script>window.aiWidgetConfig = {
+            apiUrl: 'https://gw.hizliyo.com/api/ai/ai-engine',
+            models: [
+                { id: 'llama3.1-8b', name: 'Llama 3.1 8B' },
+                { id: 'gpt-oss-120b', name: 'GPT OSS 120B' }
+            ],
+            defaultModel: 'llama3.1-8b',
+            position: 'bottom-right',
+            theme: 'dark'
+        };</script></body></html>
