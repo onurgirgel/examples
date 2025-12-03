@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kurumsal Web Sitesi</title>
+
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .hero {
+            background: linear-gradient(to right, #003d82, #005bb5);
+            color: white;
+            padding: 120px 0;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            transition: all .3s ease;
+        }
+
+        .reference-logo {
+            height: 60px;
+            filter: grayscale(100%);
+            opacity: .7;
+            transition: .3s;
+        }
+
+            .reference-logo:hover {
+                filter: grayscale(0%);
+                opacity: 1;
+            }
+
+        footer {
+            background-color: #003d82;
+            color: white;
+            padding: 30px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-light shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="#">Şirket Adı</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-4">
+                    <li class="nav-item"><a class="nav-link" href="#hero">Anasayfa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Hakkımızda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Hizmetler</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#references">Referanslar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">İletişim</a></li>
+                </ul>
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Ara..." />
+                    <button class="btn btn-outline-primary" type="submit">Ara</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero" class="hero text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Kurumsal Çözümler ile Güçlü Bir Gelecek</h1>
+            <p class="lead mt-4">İş süreçlerinizi dijitalleştiriyor, modern yazılım çözümleri ile büyümenize destek oluyoruz.</p>
+            <a href="#services" class="btn btn-light btn-lg mt-3 px-4">Hizmetlerimizi İncele</a>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-4">Hakkımızda</h2>
+            <p class="text-center col-lg-8 mx-auto">
+                20 yılı aşkın deneyimimiz ile kurumlara özel yazılım, danışmanlık ve teknoloji çözümleri sunuyoruz.
+                Müşterilerimizin hedeflerine modern yöntemlerle ulaşmasını sağlıyoruz.
+            </p>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Hizmetlerimiz</h2>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <div class="card service-card shadow-sm border-0 h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Yazılım Geliştirme</h5>
+                            <p class="card-text">Kuruma özel web, mobil ve entegrasyon çözümleri geliştiriyoruz.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card service-card shadow-sm border-0 h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Danışmanlık</h5>
+                            <p class="card-text">Uzman ekibimizle teknik mimari, süreç yönetimi ve analiz danışmanlığı veriyoruz.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card service-card shadow-sm border-0 h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Bulut Çözümleri</h5>
+                            <p class="card-text">AWS, Azure, OCI gibi bulut platformları üzerinde projelerinizi yönetiyoruz.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- REFERENCES -->
+    <section id="references" class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Referanslar</h2>
+
+            <div class="d-flex justify-content-between flex-wrap gap-4">
+                <img src="https://via.placeholder.com/150x60" class="reference-logo" alt="">
+                <img src="https://via.placeholder.com/150x60" class="reference-logo" alt="">
+                <img src="https://via.placeholder.com/150x60" class="reference-logo" alt="">
+                <img src="https://via.placeholder.com/150x60" class="reference-logo" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-4">İletişim</h2>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+
+                    <form class="shadow p-4 bg-white rounded">
+                        <div class="mb-3">
+                            <label class="form-label">Ad Soyad</label>
+                            <input type="text" class="form-control" placeholder="Adınız" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">E-posta</label>
+                            <input type="email" class="form-control" placeholder="E-posta adresiniz" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Mesaj</label>
+                            <textarea class="form-control" rows="4" placeholder="Mesajınız"></textarea>
+                        </div>
+
+                        <button class="btn btn-primary w-100">Gönder</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="text-center">
+        <p class="mb-0">© 2025 Şirket Adı – Tüm Hakları Saklıdır.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
